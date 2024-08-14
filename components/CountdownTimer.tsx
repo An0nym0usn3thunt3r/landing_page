@@ -1,9 +1,9 @@
 'use client'
+
 import React, { useState, useEffect } from 'react';
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({
-    days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
@@ -20,8 +20,7 @@ const CountdownTimer: React.FC = () => {
       
       if (difference > 0) {
         setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          hours: Math.floor(difference / (1000 * 60 * 60)),
           minutes: Math.floor((difference / 1000 / 60) % 60),
           seconds: Math.floor((difference / 1000) % 60),
         });
@@ -39,7 +38,7 @@ const CountdownTimer: React.FC = () => {
       <div className="flex space-x-4 border rounded-full px-4 shadow-lg">
         {Object.entries(timeLeft).map(([unit, value]) => (
           <div key={unit} className="flex flex-col items-center p-4 ">
-            <span className="text-5xl font-bold text-[#0841AE]">{value}</span>
+            <span className="text-5xl font-bold text-[#0841AE]">{value.toString().padStart(2, '0')}</span>
             <span className="text-xl capitalize">{unit}</span>
           </div>
         ))}
