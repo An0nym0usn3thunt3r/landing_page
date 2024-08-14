@@ -34,12 +34,12 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold mb-8 text-purple-500">Startup Launch Countdown</h1>
-      <div className="flex space-x-4">
+    <div className="flex flex-col items-center justify-center ">
+      <h1 className="text-4xl font-bold mb-8 text-[#0841AE]">We are launching in </h1>
+      <div className="flex space-x-4 border rounded-full px-4 shadow-lg">
         {Object.entries(timeLeft).map(([unit, value]) => (
-          <div key={unit} className="flex flex-col items-center">
-            <span className="text-5xl font-bold text-purple-700">{value}</span>
+          <div key={unit} className="flex flex-col items-center p-4 ">
+            <span className="text-5xl font-bold text-[#0841AE]">{value}</span>
             <span className="text-xl capitalize">{unit}</span>
           </div>
         ))}
