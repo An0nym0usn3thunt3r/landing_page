@@ -14,7 +14,7 @@ const CountdownTimer: React.FC = () => {
       const now = new Date();
       const tomorrow = new Date(now);
       tomorrow.setDate(tomorrow.getDate() + 1);
-      tomorrow.setHours(9, 0, 0, 0); // Set to 9 AM
+      tomorrow.setHours(9, 15, 0, 0); // Set to 9 AM
       
       const difference = tomorrow.getTime() - now.getTime();
       
