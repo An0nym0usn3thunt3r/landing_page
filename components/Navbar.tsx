@@ -62,7 +62,7 @@ export const Navbar = () => {
       </h1>
       <div>
         <Button>
-          <a href="https://dot.doclink.tech">Sign Up Now!</a>
+          <a href="https://social.doclink.tech">Sign Up Now!</a>
         </Button>
       </div>
     </section>

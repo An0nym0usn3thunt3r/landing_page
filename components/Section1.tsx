@@ -63,7 +63,7 @@ const Section1 = () => {
         <p className='max-w-screen-lg mt-2 text-center lg:px-4 px-10 mb-5'>At DocLink, we believe in revolutionizing the way Medical Resources is accessed and delivered. Our comprehensive platform caters to the needs of medical professionals and employers, providing a seamless and innovative solution for all stakeholders in the healthcare industry.</p>
         <div>
         <Button>
-          <a href="https://dot.doclink.tech">Sign Up Now!</a>
+          <a href="https://social.doclink.tech">Sign Up Now!</a>
         </Button>
       </div>
         <div className='mt-5'>
