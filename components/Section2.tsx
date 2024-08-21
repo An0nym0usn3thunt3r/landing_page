@@ -2,16 +2,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import {
   Form,
   FormControl,
   FormDescription,
@@ -120,60 +110,11 @@ const Section2 = () => {
               <p className="mb-8">Effortlessly connect with qualified healthcare professionals on our platform. Filter candidates by specialty and location. Streamline recruitment, manage workforce, and access valuable resources for organizational success.
               </p>
 
-              <Drawer>
-                <DrawerTrigger>
-                  <span className="bg-indigo-600 p-3 text-white rounded h-2 ">Join The Waitlist</span>
-                </DrawerTrigger>
-                <DrawerContent className="flex justify-center items-center">
-                  <div className="flex flex-row justify-between gap-x-[350px] mb-5  ">
-                    <div>
-                      <h1 className="text-xl font-semibold">Doc<span className="text-indigo-700">Link</span></h1>
-                    </div>
-                    <div>
-                      <h1 className="text-xl font-semibold">Join The WaitList</h1>
-                    </div>
-                  </div>
-                  <div className="max-w-4xl">
-                    <Form {...form}>
-                      <form
-                        onSubmit={form.handleSubmit(onSubmit)}
-                        className="space-y-8"
-                      >
-                        <FormField
-                          control={form.control}
-                          name="email"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormControl>
-                                <Input placeholder="Email ID" {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="name"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormControl>
-                                <Input placeholder="Name" {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <DrawerFooter className="flex flex-row justify-center gap-x-[120px] ">
-                          <Button disabled={isSubmitting} type="submit">Submit</Button>
-                          <DrawerClose>
-                            <Button variant="outline">Cancel</Button>
-                          </DrawerClose>
-                        </DrawerFooter>
-                      </form>
-                    </Form>
-                  </div>
-                </DrawerContent>
-              </Drawer>
+              <div>
+        <Button>
+          <a href="https://dot.doclink.tech">Sign Up Now!</a>
+        </Button>
+      </div>
             </div>
             <div>
               <Image
